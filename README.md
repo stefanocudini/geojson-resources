@@ -11,7 +11,7 @@ npm i geojson-resources
 ## Usage
 
 Loading by JQuery and show in Leaflet map directly in your page:
-```
+```javascript
 $.when(
   $.getJSON('https://unpkg.com/geojson-resources@1.1.0/world.json'),
 )
