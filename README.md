@@ -12,12 +12,16 @@ npm i geojson-resources
 
 Loading by JQuery and show in Leaflet map directly in your page:
 ```javascript
-$.when(
-  $.getJSON('https://unpkg.com/geojson-resources@1.1.0/world.json'),
-)
-.then(function(arg) {
+
+//your map
+var map = L.map(...);
+
+$.when($.getJSON('https://unpkg.com/geojson-resources@1.1.0/world.json'))
+.then(function(json) {
   
-  L.geoJSON(arg[0]).addTo(map);
+  //load world boundaries in your map
+  
+  L.geoJSON(json).addTo(map);
   
 });
 ```
