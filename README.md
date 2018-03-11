@@ -1,6 +1,6 @@
 # geojson-resources
 
-Statis GeoJSON resources
+Usable Static GeoJSON resources
 
 ## Install
 
