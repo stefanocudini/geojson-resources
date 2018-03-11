@@ -20,7 +20,6 @@ $.when($.getJSON('https://unpkg.com/geojson-resources@1.1.0/world.json'))
 .then(function(json) {
   
   //load world boundaries in your map
-  
   L.geoJSON(json).addTo(map);
   
 });
